@@ -104,22 +104,22 @@
 #         break
 
 # №14
-size = 1280 * 1024
-N = 39
-tr_sp = 1966080
-t = 280
-for i in range(1, 1000):
-    if size * i * N / tr_sp > t:
-        print(2 ** (i - 1))
-        break
+# size = 1280 * 1024
+# N = 39
+# tr_sp = 1966080
+# t = 280
+# for i in range(1, 1000):
+#     if size * i * N / tr_sp > t:
+#         print(2 ** (i - 1))
+#         break
 
 # №14 вариант решения 2
-from math import ceil, log2
-size = 1280 * 1024
-N = 39
-tr_sp = 1966080
-t = 280
-for color in range(5000, 1, -1):
-    if size * ceil(log2(color)) * N / tr_sp <= t:
-        print(color)
-        break
+# from math import ceil, log2
+# size = 1280 * 1024
+# N = 39
+# tr_sp = 1966080
+# t = 280
+# for color in range(5000, 1, -1):
+#     if size * ceil(log2(color)) * N / tr_sp <= t:
+#         print(color)
+#         break
